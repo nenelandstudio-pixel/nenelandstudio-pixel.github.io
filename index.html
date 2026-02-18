@@ -1,52 +1,102 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neneland - Devread</title>
+    <title>Neneland</title>
+    <meta name="description" content="Neneland - Innovative mobile applications and web services.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify_content: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f2f5;
-            color: #333;
+            font-family: 'Inter', sans-serif;
         }
-        .container {
-            text-align: center;
-            padding: 2rem;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 { margin-bottom: 0.5rem; color: #2c3e50; }
-        p { color: #666; margin-bottom: 1.5rem; }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-        .footer { margin-top: 2rem; font-size: 0.8rem; color: #999; }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Neneland</h1>
-        <p>더 나은 서비스를 만드는 개발자 Devread의 공간입니다.</p>
-        <a href="#" class="btn">앱 구경하기</a>
-        
-        <div class="footer">
-            Contact: devread@example.com<br>
-            &copy; 2026 Neneland. All rights reserved.
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Main Content Wrapper -->
+    <main class="flex-grow flex items-center justify-center p-6">
+        <div class="max-w-2xl w-full bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+            
+            <!-- Header / Brand Section -->
+            <div class="bg-indigo-600 p-10 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
+                            </pattern>
+                        </defs>
+                        <rect width="100%" height="100%" fill="url(#grid)" />
+                    </svg>
+                </div>
+                <h1 class="text-4xl font-bold text-white tracking-tight relative z-10">Neneland</h1>
+                <p class="text-indigo-100 mt-2 text-sm uppercase tracking-widest font-semibold relative z-10">Innovative Dev Team</p>
+            </div>
+
+            <!-- Content Section -->
+            <div class="p-8 md:p-12 space-y-10">
+                
+                <!-- About Us -->
+                <section>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-1 h-6 bg-indigo-500 rounded-full"></div>
+                        <h2 class="text-xl font-bold text-slate-900">About Us</h2>
+                    </div>
+                    <p class="text-slate-600 leading-relaxed">
+                        We are <span class="font-semibold text-slate-800">Neneland</span>, a passionate team of developers dedicated to creating innovative mobile applications and web services. Our mission is to provide useful tools that simplify daily tasks and enhance productivity for users worldwide.
+                    </p>
+                </section>
+
+                <hr class="border-slate-100">
+
+                <!-- Contact Information -->
+                <section>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-1 h-6 bg-indigo-500 rounded-full"></div>
+                        <h2 class="text-xl font-bold text-slate-900">Contact Information</h2>
+                    </div>
+                    
+                    <div class="bg-slate-50 rounded-xl p-6 border border-slate-200 hover:border-indigo-300 transition-colors duration-300">
+                        <div class="grid gap-6 md:grid-cols-2">
+                            <!-- Organization -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm text-indigo-600 border border-slate-100">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Organization</p>
+                                    <p class="font-medium text-slate-900 mt-1">Neneland</p>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shadow-sm text-indigo-600 border border-slate-100">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-semibold text-slate-400 uppercase tracking-wide">Email</p>
+                                    <a href="mailto:nenelandstudio@gmail.com" class="font-medium text-indigo-600 hover:text-indigo-800 transition-colors mt-1 block break-all">
+                                        nenelandstudio@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-slate-50 px-8 py-6 text-center border-t border-slate-100">
+                <p class="text-sm text-slate-400">
+                    &copy; 2026 Neneland. All rights reserved.
+                </p>
+            </div>
         </div>
-    </div>
+    </main>
+
 </body>
 </html>
